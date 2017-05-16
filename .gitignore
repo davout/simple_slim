@@ -1,0 +1,16 @@
+# Vim artifacts
+**/*.swp
+**/*.swo
+**/*.swn
+
+# Generated documentation
+.yardoc
+doc/
+
+# Coverage
+coverage/
+
+Gemfile.lock
+
+.byebug_history
+
