@@ -1,6 +1,8 @@
 SimpleSlim
 =
 
+[![Build Status](https://secure.travis-ci.org/davout/simple_slim.png?branch=master)](http://travis-ci.org/davout/simple_slim)
+
 Get paid.
 
 1. Get your credentials
@@ -19,7 +21,7 @@ end
 
 3. Get crackin'
 
-````
+````ruby
 # Create a SDD mandate
 mandate = SimpleSlim::Mandate.create({
 
