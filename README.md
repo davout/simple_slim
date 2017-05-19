@@ -6,31 +6,33 @@ SimpleSlim
 Get paid.
 
 1. Get your credentials
-2. Get them in your code
+2. Get crackin'
 
 ````ruby
+# Configure it all
 Slimpay.configure do |config|
-  config.client_id          = 'your_client_id'
-  config.client_secret      = 'your_client_secret'
-  config.creditor_reference = 'your_creditor_reference'
+  config.client_id          = 'democreditor01'
+  config.client_secret      = 'demosecret01'
+  config.creditor_reference = 'democreditor'
   config.sandbox            = true
-  config.notify_url         = 'your_notification_URL'
-  config.return_url         = 'your_return_URL'
-end
-````
+  config.notify_url         = 'https://goatse.cx/callback' # This must be a HTTPS URL !
+  config.return_url         = 'http://goatse.cx/'
 
-3. Get crackin'
-
-````ruby
-# Create a SDD mandate
+# Create a SDD mandate signature request
 mandate = SimpleSlim::Mandate.create({
-
+  first_name:           'Jean',
+  family_name:          'Valjean',
+  title:                'Mr',
+  telephone:            '+33600000000',
+  email:                'jean@valjean.com',
+  address_1:            '3 rue du Pain',
+  city:                 'Donaldville',
+  zip_code:             '66666',
+  subscriber_reference: '42'
 })
 
-# Redirect the customer to the `mandate.signature_url` and handle the returned
-# success callback.
+# => { success: true, url: "http://slimpay.com/...", iframe: "<iframe src='...' />" }
 
-# Trigger a 42.03 EUR payment against this mandate
-charge = mandate.charge(4203)
+# Redirect the customer or show him the iframe, wait for the callback
 ````
 
