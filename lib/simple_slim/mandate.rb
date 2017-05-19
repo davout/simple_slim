@@ -7,7 +7,7 @@ module SimpleSlim
 
     #
     # Creates a new mandate signature request. This request is then submitted to
-    # the customer who then signs it either on Slimpay's interface, or in an
+    # the customer who can then sign it either on Slimpay's interface, or in an
     # iframe.
     #
     # The +subscriber_reference+ attribute must be unique to a subscriber and
@@ -15,6 +15,9 @@ module SimpleSlim
     #
     # All parameters are mandatory except +country+ and locale that default
     # to 'FR', and +address_2+ that defaults to +nil+.
+    #
+    # The method returns a hash containing both the URL to redirect the customer
+    # to, and the iframe HTML that can be embedded.
     #
     # @param first_name [String]
     # @param family_name [String]
@@ -29,7 +32,7 @@ module SimpleSlim
     # @param country [String]
     # @param locale [String]
     #
-    # @return [SimpleSlim::Mandate]
+    # @return [Hash]
     #
     def self.create_signature_order(first_name:, family_name:, title:,
                                     telephone:, 
@@ -75,11 +78,11 @@ module SimpleSlim
       # Fetch approval iframe
       iframe = JSON.load(order.extended_user_approval(mode: 'iframeembedded').parsed_response)['content']
 
-      { success: true, iframe: iframe, url: url }
+      { success: true, iframe: Base64.decode64(iframe), url: url }
     end
 
     #
-    # Retrieves a mandate given a mandate reference
+    # Retrieves a mandate given a reference
     #
     # @param reference [String]
     # @return [SimpleSlim::Mandate]
