@@ -34,6 +34,21 @@ mandate = SimpleSlim::Mandate.create_signature_order({
 
 # => { success: true, url: "http://slimpay.com/...", iframe: "<iframe src='...' />" }
 
-# Redirect the customer or show him the iframe, wait for the callback
+# Redirect the customer or show him the iframe, wait for the callback.
+# Once the callback arrives, retrieve the order reference and use it to fetch
+# the associated mandate.
+
+order_ref = JSON.load(callback_request_body)['reference']
+
+mandate = SimpleSlim::Mandate.get_from_signature_order(order_ref)
+
+# The mandate instance will hold the SDD mandate information, as well as the
+# customer's bank account information (IBAN, BIC, bank name).
+
+# Charges can be made against mandates by using their RUM (Référence Unique de
+# Mandat).
+
+# Charge a 100€ direct debit against the mandate
+direct_debit = SimpleSlim::DirectDebit.charge(mandate.rum, 10000, "My charge description")
 ````
 
