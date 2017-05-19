@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 19 May 2017 11:56:43 GMT
+      - Fri, 19 May 2017 11:17:42 GMT
       Server:
       - Apache-Coyote/1.1
       Strict-Transport-Security:
@@ -60,14 +60,14 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "access_token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTk2MDAyLCJqdGkiOiJjYmE3M2RiYS00NzQ4LTQzYzItYjAzYS0wYTNjNzIzMzVkM2MiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.NZ-UavxvI_AjRMX1_yXmwmhZ1p_BmMOCRaQquiqqvJI",
+          "access_token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTkzNjYxLCJqdGkiOiJkNWFmMTY3MS0xYTk4LTRlNjMtYTVlMC00N2EzYjI0NGJiYmMiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.lIManLBBDvZDN_AsCuCu3RcKphUNMFGrLa0SgzfGiek",
           "token_type" : "bearer",
           "expires_in" : 998,
           "scope" : "api",
-          "jti" : "cba73dba-4748-43c2-b03a-0a3c72335d3c"
+          "jti" : "d5af1671-1a98-4e63-a5e0-47a3b244bbbc"
         }
     http_version: 
-  recorded_at: Fri, 19 May 2017 11:56:25 GMT
+  recorded_at: Fri, 19 May 2017 11:17:25 GMT
 - request:
     method: get
     uri: https://api-sandbox.slimpay.net/
@@ -76,7 +76,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTk2MDAyLCJqdGkiOiJjYmE3M2RiYS00NzQ4LTQzYzItYjAzYS0wYTNjNzIzMzVkM2MiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.NZ-UavxvI_AjRMX1_yXmwmhZ1p_BmMOCRaQquiqqvJI
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTkzNjYxLCJqdGkiOiJkNWFmMTY3MS0xYTk4LTRlNjMtYTVlMC00N2EzYjI0NGJiYmMiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.lIManLBBDvZDN_AsCuCu3RcKphUNMFGrLa0SgzfGiek
       Content-Type:
       - application/json
   response:
@@ -85,7 +85,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 19 May 2017 11:56:46 GMT
+      - Fri, 19 May 2017 11:17:45 GMT
       Server:
       - Apache-Coyote/1.1
       Strict-Transport-Security:
@@ -276,26 +276,25 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Fri, 19 May 2017 11:56:29 GMT
+  recorded_at: Fri, 19 May 2017 11:17:28 GMT
 - request:
-    method: post
-    uri: https://api-sandbox.slimpay.net/orders
+    method: get
+    uri: https://api-sandbox.slimpay.net/orders?creditorReference=democreditor&reference=84ca416e-3c7f-11e7-9800-000000000000
     body:
-      encoding: UTF-8
-      string: '{"creditor":{"reference":"democreditor"},"subscriber":{"reference":"42"},"locale":"fr","paymentScheme":"SEPA.DIRECT_DEBIT.CORE","started":true,"items":[{"type":"signMandate","mandate":{"signatory":{"billingAddress":{"city":"Donaldville","country":"FR","postalCode":"66666","street1":"3
-        rue du Pain","street2":null},"email":"jean@valjean.com","familyName":"Valjean","givenName":"","honorificPrefix":"Mr","telephone":"+33600000000"}}}]}'
+      encoding: US-ASCII
+      string: ''
     headers:
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTk2MDAyLCJqdGkiOiJjYmE3M2RiYS00NzQ4LTQzYzItYjAzYS0wYTNjNzIzMzVkM2MiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.NZ-UavxvI_AjRMX1_yXmwmhZ1p_BmMOCRaQquiqqvJI
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTkzNjYxLCJqdGkiOiJkNWFmMTY3MS0xYTk4LTRlNjMtYTVlMC00N2EzYjI0NGJiYmMiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.lIManLBBDvZDN_AsCuCu3RcKphUNMFGrLa0SgzfGiek
       Content-Type:
       - application/json
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 200
+      message: OK
     headers:
       Date:
-      - Fri, 19 May 2017 11:56:48 GMT
+      - Fri, 19 May 2017 11:17:47 GMT
       Server:
       - Apache-Coyote/1.1
       Strict-Transport-Security:
@@ -316,19 +315,211 @@ http_interactions:
       - DENY
       X-Application-Context:
       - application:preprod:${rest.server.port}
+      Etag:
+      - '"0c2466b47bbb228401e8d31992c921db4"'
       Content-Type:
       - application/hal+json; profile="https://api.slimpay.net/alps/v1";charset=UTF-8
       Content-Length:
-      - '78'
-      Connection:
-      - close
+      - '1302'
     body:
       encoding: UTF-8
       string: |-
         {
-          "code" : 123,
-          "message" : "Invalid givenName property: invalid value "
+          "_links" : {
+            "self" : {
+              "href" : "https://api-sandbox.slimpay.net/orders/84ca416e-3c7f-11e7-9800-000000000000"
+            },
+            "profile" : {
+              "href" : "https://api-sandbox.slimpay.net/alps/v1/orders"
+            },
+            "https://api.slimpay.net/alps#get-creditor" : {
+              "href" : "https://api-sandbox.slimpay.net/creditors/democreditor"
+            },
+            "https://api.slimpay.net/alps#get-subscriber" : {
+              "href" : "https://api-sandbox.slimpay.net/orders/84ca416e-3c7f-11e7-9800-000000000000/subscriber"
+            },
+            "https://api.slimpay.net/alps#get-order-items" : {
+              "href" : "https://api-sandbox.slimpay.net/orders/84ca416e-3c7f-11e7-9800-000000000000/order-items"
+            },
+            "https://api.slimpay.net/alps#get-mandate" : {
+              "href" : "https://api-sandbox.slimpay.net/mandates/a4ed0873-3c7f-11e7-b26a-000000000000"
+            }
+          },
+          "id" : "84ca416e-3c7f-11e7-9800-000000000000",
+          "reference" : "84ca416e-3c7f-11e7-9800-000000000000",
+          "state" : "closed.completed",
+          "locale" : "fr",
+          "started" : true,
+          "dateCreated" : "2017-05-19T10:40:04.000+0000",
+          "dateModified" : "2017-05-19T10:40:04.000+0000",
+          "dateClosed" : "2017-05-19T10:41:11.000+0000",
+          "paymentScheme" : "SEPA.DIRECT_DEBIT.CORE",
+          "mandateReused" : false,
+          "sendUserApproval" : false,
+          "checkoutActor" : "end_user"
         }
     http_version: 
-  recorded_at: Fri, 19 May 2017 11:56:31 GMT
+  recorded_at: Fri, 19 May 2017 11:17:30 GMT
+- request:
+    method: get
+    uri: https://api-sandbox.slimpay.net/mandates/a4ed0873-3c7f-11e7-b26a-000000000000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTkzNjYxLCJqdGkiOiJkNWFmMTY3MS0xYTk4LTRlNjMtYTVlMC00N2EzYjI0NGJiYmMiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.lIManLBBDvZDN_AsCuCu3RcKphUNMFGrLa0SgzfGiek
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2017 11:17:51 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PATCH, GET, OPTIONS, DELETE
+      Access-Control-Max-Age:
+      - '3600'
+      Access-Control-Allow-Headers:
+      - x-requested-with, authorization, content-type, accept
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Application-Context:
+      - application:preprod:${rest.server.port}
+      Etag:
+      - '"00b626dd79b12c3c75ba92cbca4cbe062"'
+      Content-Type:
+      - application/hal+json; profile="https://api.slimpay.net/alps/v1";charset=UTF-8
+      Content-Length:
+      - '2087'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links" : {
+            "self" : {
+              "href" : "https://api-sandbox.slimpay.net/mandates/a4ed0873-3c7f-11e7-b26a-000000000000"
+            },
+            "profile" : {
+              "href" : "https://api-sandbox.slimpay.net/alps/v1/mandates"
+            },
+            "https://api.slimpay.net/alps#get-creditor" : {
+              "href" : "https://api-sandbox.slimpay.net/creditors/democreditor"
+            },
+            "https://api.slimpay.net/alps#get-signatory" : {
+              "href" : "https://api-sandbox.slimpay.net/mandates/a4ed0873-3c7f-11e7-b26a-000000000000/signatory"
+            },
+            "https://api.slimpay.net/alps#get-subscriber" : {
+              "href" : "https://api-sandbox.slimpay.net/creditors/democreditor/subscribers/subscriber01pouetpouet"
+            },
+            "https://api.slimpay.net/alps#get-document" : {
+              "href" : "https://api-sandbox.slimpay.net/mandates/a4ed0873-3c7f-11e7-b26a-000000000000/document"
+            },
+            "https://api.slimpay.net/alps#get-binary-content" : {
+              "href" : "https://api-sandbox.slimpay.net/mandates/a4ed0873-3c7f-11e7-b26a-000000000000/document"
+            },
+            "https://api.slimpay.net/alps#revoke-mandate" : {
+              "href" : "https://api-sandbox.slimpay.net/mandates/a4ed0873-3c7f-11e7-b26a-000000000000/revocation"
+            },
+            "https://api.slimpay.net/alps#get-bank-account" : {
+              "href" : "https://api-sandbox.slimpay.net/mandates/a4ed0873-3c7f-11e7-b26a-000000000000/bank-account"
+            },
+            "https://api.slimpay.net/alps#update-bank-account" : {
+              "href" : "https://api-sandbox.slimpay.net/mandates/a4ed0873-3c7f-11e7-b26a-000000000000/bank-accounts"
+            },
+            "https://api.slimpay.net/alps#show-bank-accounts-history" : {
+              "href" : "https://api-sandbox.slimpay.net/mandates/a4ed0873-3c7f-11e7-b26a-000000000000/bank-accounts-history{?page,size}",
+              "templated" : true
+            }
+          },
+          "id" : "a4ed0873-3c7f-11e7-b26a-000000000000",
+          "reference" : "SLMP003441095",
+          "rum" : "SLMP003441095",
+          "state" : "active",
+          "standard" : "SEPA",
+          "initialScore" : 2,
+          "dateCreated" : "2017-05-19T10:40:58.000+0000",
+          "dateSigned" : "2017-05-19T10:40:58.000+0000",
+          "paymentScheme" : "SEPA.DIRECT_DEBIT.CORE"
+        }
+    http_version: 
+  recorded_at: Fri, 19 May 2017 11:17:34 GMT
+- request:
+    method: get
+    uri: https://api-sandbox.slimpay.net/mandates/a4ed0873-3c7f-11e7-b26a-000000000000/bank-account
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTkzNjYxLCJqdGkiOiJkNWFmMTY3MS0xYTk4LTRlNjMtYTVlMC00N2EzYjI0NGJiYmMiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.lIManLBBDvZDN_AsCuCu3RcKphUNMFGrLa0SgzfGiek
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 May 2017 11:17:53 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PATCH, GET, OPTIONS, DELETE
+      Access-Control-Max-Age:
+      - '3600'
+      Access-Control-Allow-Headers:
+      - x-requested-with, authorization, content-type, accept
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Application-Context:
+      - application:preprod:${rest.server.port}
+      Etag:
+      - '"03b3c93f5caaf3f59c2353b01de7b5e32"'
+      Content-Type:
+      - application/hal+json; profile="https://api.slimpay.net/alps/v1";charset=UTF-8
+      Content-Length:
+      - '549'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "_links" : {
+            "self" : {
+              "href" : "https://api-sandbox.slimpay.net/mandates/a4ed0873-3c7f-11e7-b26a-000000000000/bank-account"
+            },
+            "profile" : {
+              "href" : "https://api-sandbox.slimpay.net/alps/v1/bank-accounts"
+            },
+            "https://api.slimpay.net/alps#get-mandate" : {
+              "href" : "https://api-sandbox.slimpay.net/mandates/a4ed0873-3c7f-11e7-b26a-000000000000"
+            }
+          },
+          "id" : "a36be6b2-3c7f-11e7-b26a-000000000000",
+          "bic" : "SLMPFRP1XXX",
+          "iban" : "FR7616348000019212905486870",
+          "institutionName" : "SLIMPAY"
+        }
+    http_version: 
+  recorded_at: Fri, 19 May 2017 11:17:36 GMT
 recorded_with: VCR 3.0.3

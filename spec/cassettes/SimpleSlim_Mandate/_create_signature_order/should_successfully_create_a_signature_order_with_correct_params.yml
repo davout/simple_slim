@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 19 May 2017 07:50:29 GMT
+      - Fri, 19 May 2017 11:56:34 GMT
       Server:
       - Apache-Coyote/1.1
       Strict-Transport-Security:
@@ -60,14 +60,14 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-          "access_token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTgxMjI4LCJqdGkiOiI0MmY3OTliNy1kZDYxLTQwMmMtODhiYS1kNTY4NDA5MDBlZmMiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.SsPLn0hn_1aEss1bLln-uQz9L6cqLMrAFmYwNSouMME",
+          "access_token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTk1OTkzLCJqdGkiOiJmZWNiYjI1Zi02NDA1LTQ5MWYtODhlMi1mNjYyYzc0MDlmNTUiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.wAEjo66aw_GSJGyNzUeG7P8BMZvsDFetmIWGRwTbaps",
           "token_type" : "bearer",
           "expires_in" : 998,
           "scope" : "api",
-          "jti" : "42f799b7-dd61-402c-88ba-d56840900efc"
+          "jti" : "fecbb25f-6405-491f-88e2-f662c7409f55"
         }
     http_version: 
-  recorded_at: Fri, 19 May 2017 07:50:12 GMT
+  recorded_at: Fri, 19 May 2017 11:56:17 GMT
 - request:
     method: get
     uri: https://api-sandbox.slimpay.net/
@@ -76,7 +76,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTgxMjI4LCJqdGkiOiI0MmY3OTliNy1kZDYxLTQwMmMtODhiYS1kNTY4NDA5MDBlZmMiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.SsPLn0hn_1aEss1bLln-uQz9L6cqLMrAFmYwNSouMME
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTk1OTkzLCJqdGkiOiJmZWNiYjI1Zi02NDA1LTQ5MWYtODhlMi1mNjYyYzc0MDlmNTUiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.wAEjo66aw_GSJGyNzUeG7P8BMZvsDFetmIWGRwTbaps
       Content-Type:
       - application/json
   response:
@@ -85,7 +85,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 19 May 2017 07:50:31 GMT
+      - Fri, 19 May 2017 11:56:36 GMT
       Server:
       - Apache-Coyote/1.1
       Strict-Transport-Security:
@@ -276,7 +276,7 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Fri, 19 May 2017 07:50:15 GMT
+  recorded_at: Fri, 19 May 2017 11:56:19 GMT
 - request:
     method: post
     uri: https://api-sandbox.slimpay.net/orders
@@ -286,7 +286,7 @@ http_interactions:
         rue du Pain","street2":null},"email":"jean@valjean.com","familyName":"Valjean","givenName":"Jean","honorificPrefix":"Mr","telephone":"+33600000000"}}}]}'
     headers:
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTgxMjI4LCJqdGkiOiI0MmY3OTliNy1kZDYxLTQwMmMtODhiYS1kNTY4NDA5MDBlZmMiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.SsPLn0hn_1aEss1bLln-uQz9L6cqLMrAFmYwNSouMME
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTk1OTkzLCJqdGkiOiJmZWNiYjI1Zi02NDA1LTQ5MWYtODhlMi1mNjYyYzc0MDlmNTUiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.wAEjo66aw_GSJGyNzUeG7P8BMZvsDFetmIWGRwTbaps
       Content-Type:
       - application/json
   response:
@@ -295,7 +295,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Fri, 19 May 2017 07:50:34 GMT
+      - Fri, 19 May 2017 11:56:39 GMT
       Server:
       - Apache-Coyote/1.1
       Strict-Transport-Security:
@@ -317,20 +317,20 @@ http_interactions:
       X-Application-Context:
       - application:preprod:${rest.server.port}
       Location:
-      - https://api-sandbox.slimpay.net/orders/d70052da-3c67-11e7-9800-000000000000
+      - https://api-sandbox.slimpay.net/orders/37663cf1-3c8a-11e7-9800-000000000000
       Content-Type:
       - application/hal+json; profile="https://api.slimpay.net/alps/v1";charset=UTF-8
       Content-Length:
       - '1503'
       Set-Cookie:
-      - JSESSIONID=3791BB25830B03C5F650A74F10FAD74F; Path=/api; HttpOnly
+      - JSESSIONID=3A67CEEE2B8F01526976B9DD639B1D3E; Path=/api; HttpOnly
     body:
       encoding: UTF-8
       string: |-
         {
           "_links" : {
             "self" : {
-              "href" : "https://api-sandbox.slimpay.net/orders/d70052da-3c67-11e7-9800-000000000000"
+              "href" : "https://api-sandbox.slimpay.net/orders/37663cf1-3c8a-11e7-9800-000000000000"
             },
             "profile" : {
               "href" : "https://api-sandbox.slimpay.net/alps/v1/orders"
@@ -339,41 +339,41 @@ http_interactions:
               "href" : "https://api-sandbox.slimpay.net/creditors/democreditor"
             },
             "https://api.slimpay.net/alps#get-subscriber" : {
-              "href" : "https://api-sandbox.slimpay.net/orders/d70052da-3c67-11e7-9800-000000000000/subscriber"
+              "href" : "https://api-sandbox.slimpay.net/orders/37663cf1-3c8a-11e7-9800-000000000000/subscriber"
             },
             "https://api.slimpay.net/alps#get-order-items" : {
-              "href" : "https://api-sandbox.slimpay.net/orders/d70052da-3c67-11e7-9800-000000000000/order-items"
+              "href" : "https://api-sandbox.slimpay.net/orders/37663cf1-3c8a-11e7-9800-000000000000/order-items"
             },
             "https://api.slimpay.net/alps#user-approval" : {
-              "href" : "https://slimpay.net/checkout/userApproval?accessCode=spe2iSa7kTGCyOTwriauHigWdtMQZs6uGoqdm7UCEX46oT8URYHIlNYBviCcl4"
+              "href" : "https://slimpay.net/checkout/userApproval?accessCode=spXv4R1WzlQPoHICenuDgjNfF1EDK1JOpL4gEokq4x4uLblOcRbvdPMvIWmpRQ"
             },
             "https://api.slimpay.net/alps#extended-user-approval" : {
-              "href" : "https://api-sandbox.slimpay.net/creditors/democreditor/orders/d70052da-3c67-11e7-9800-000000000000/extended-user-approval{?mode}",
+              "href" : "https://api-sandbox.slimpay.net/creditors/democreditor/orders/37663cf1-3c8a-11e7-9800-000000000000/extended-user-approval{?mode}",
               "templated" : true
             }
           },
-          "id" : "d70052da-3c67-11e7-9800-000000000000",
-          "reference" : "d70052da-3c67-11e7-9800-000000000000",
+          "id" : "37663cf1-3c8a-11e7-9800-000000000000",
+          "reference" : "37663cf1-3c8a-11e7-9800-000000000000",
           "state" : "open.running",
           "locale" : "fr",
           "started" : true,
-          "dateCreated" : "2017-05-19T07:50:34.390+0000",
-          "dateModified" : "2017-05-19T07:50:34.389+0000",
+          "dateCreated" : "2017-05-19T11:56:39.032+0000",
+          "dateModified" : "2017-05-19T11:56:39.031+0000",
           "paymentScheme" : "SEPA.DIRECT_DEBIT.CORE",
           "sendUserApproval" : false,
           "checkoutActor" : "end_user"
         }
     http_version: 
-  recorded_at: Fri, 19 May 2017 07:50:17 GMT
+  recorded_at: Fri, 19 May 2017 11:56:21 GMT
 - request:
     method: get
-    uri: https://api-sandbox.slimpay.net/creditors/democreditor/orders/d70052da-3c67-11e7-9800-000000000000/extended-user-approval?mode=iframeembedded
+    uri: https://api-sandbox.slimpay.net/creditors/democreditor/orders/37663cf1-3c8a-11e7-9800-000000000000/extended-user-approval?mode=iframepopin
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTgxMjI4LCJqdGkiOiI0MmY3OTliNy1kZDYxLTQwMmMtODhiYS1kNTY4NDA5MDBlZmMiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.SsPLn0hn_1aEss1bLln-uQz9L6cqLMrAFmYwNSouMME
+      - Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhcGkiXSwiZXhwIjoxNDk1MTk1OTkzLCJqdGkiOiJmZWNiYjI1Zi02NDA1LTQ5MWYtODhlMi1mNjYyYzc0MDlmNTUiLCJjbGllbnRfaWQiOiJkZW1vY3JlZGl0b3IwMSJ9.wAEjo66aw_GSJGyNzUeG7P8BMZvsDFetmIWGRwTbaps
       Content-Type:
       - application/json
   response:
@@ -382,7 +382,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 19 May 2017 07:50:36 GMT
+      - Fri, 19 May 2017 11:56:41 GMT
       Server:
       - Apache-Coyote/1.1
       Strict-Transport-Security:
@@ -404,26 +404,26 @@ http_interactions:
       X-Application-Context:
       - application:preprod:${rest.server.port}
       Etag:
-      - '"061d2d55adb8c81b4154e599e9e61430e"'
+      - '"0a469c3dfded7a6c31273f950554143e7"'
       Content-Type:
       - application/hal+json; profile="https://api.slimpay.net/alps/v1";charset=UTF-8
       Content-Length:
-      - '658'
+      - '692'
     body:
       encoding: UTF-8
       string: |-
         {
           "_links" : {
             "self" : {
-              "href" : "https://api-sandbox.slimpay.net/creditors/democreditor/orders/d70052da-3c67-11e7-9800-000000000000/extended-user-approval?mode=iframeembedded"
+              "href" : "https://api-sandbox.slimpay.net/creditors/democreditor/orders/37663cf1-3c8a-11e7-9800-000000000000/extended-user-approval?mode=iframepopin"
             },
             "profile" : {
               "href" : "https://api-sandbox.slimpay.net/alps/v1/user-approvals"
             }
           },
-          "mode" : "iframeembedded",
-          "content" : "PGlmcmFtZSBzcmM9Imh0dHBzOi8vc2xpbXBheS5uZXQvY2hlY2tvdXQvdXNlckFwcHJvdmFsP2FjY2Vzc0NvZGU9c3BlMmlTYTdrVEdDeU9Ud3JpYXVIaWdXZHRNUVpzNnVHb3FkbTdVQ0VYNDZvVDhVUllISWxOWUJ2aUNjbDQmYW1wO21vZGU9aWZyYW1lX2VtYmVkZGVkIiBzdHlsZT0id2lkdGg6IDEwMCU7IGhlaWdodDogMTAwJTsgbWluLWhlaWdodDogMzIwcHg7IGJvcmRlcjogbm9uZTsiPjwvaWZyYW1lPg=="
+          "mode" : "iframepopin",
+          "content" : "PGlmcmFtZSBzcmM9Imh0dHBzOi8vc2xpbXBheS5uZXQvY2hlY2tvdXQvdXNlckFwcHJvdmFsP2FjY2Vzc0NvZGU9c3BYdjRSMVd6bFFQb0hJQ2VudURnak5mRjFFREsxSk9wTDRnRW9rcTR4NHVMYmxPY1JidmRQTXZJV21wUlEmYW1wO21vZGU9aWZyYW1lX3BvcGluIiBzdHlsZT0iei1pbmRleDogMTY3NzcyNzE7IHBvc2l0aW9uOiBmaXhlZDsgdG9wOiAwOyBsZWZ0OiAwOyB3aWR0aDogMTAwJTsgaGVpZ2h0OiAxMDAlOyBib3JkZXI6IG5vbmU7Ij48L2lmcmFtZT4K"
         }
     http_version: 
-  recorded_at: Fri, 19 May 2017 07:50:20 GMT
+  recorded_at: Fri, 19 May 2017 11:56:23 GMT
 recorded_with: VCR 3.0.3
