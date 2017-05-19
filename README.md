@@ -19,8 +19,8 @@ Slimpay.configure do |config|
   config.return_url         = 'http://goatse.cx/'
 end
 
-# Create a SDD mandate signature request
-mandate = SimpleSlim::Mandate.create({
+# Create a SDD mandate signature order
+mandate = SimpleSlim::Mandate.create_signature_order({
   first_name:           'Jean',
   family_name:          'Valjean',
   title:                'Mr',
