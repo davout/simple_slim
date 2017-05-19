@@ -17,6 +17,7 @@ Slimpay.configure do |config|
   config.sandbox            = true
   config.notify_url         = 'https://goatse.cx/callback' # This must be a HTTPS URL !
   config.return_url         = 'http://goatse.cx/'
+end
 
 # Create a SDD mandate signature request
 mandate = SimpleSlim::Mandate.create({
